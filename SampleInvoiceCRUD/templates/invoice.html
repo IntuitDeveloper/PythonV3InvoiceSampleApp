@@ -1,0 +1,33 @@
+
+<html>
+<head>
+  <title>Invoice Python Sample</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    function getResponse(url) {
+        $("#result").html('Loading...')
+        $.get(url, function(data) {
+          $("#result").html(JSON.stringify(data, null, 2))
+      })
+    }
+      
+  </script>
+
+</head>
+<body>
+ <h3>Invoice Python Sample</h3>
+     <button onclick="getResponse('/invoice/create')">Create Invoice</button>
+     <br /><br />
+     <button onclick="getResponse('/invoice/read')">Read Invoice</button>
+     <br /><br />
+     <button onclick="getResponse('/invoice/update')">Update Invoice</button>
+     <br /><br />
+     <button onclick="getResponse('/invoice/delete')">Delete Invoice</button>
+     <br /><br />
+     <button onclick="getResponse('/invoice/query')">Query Invoice</button>
+     <br><br>
+     <div><code id="result"></code></div>
+
+</body>
+</html>
