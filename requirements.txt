@@ -1,0 +1,6 @@
+requests_oauthlib==0.8.0
+requests==2.13.0
+Django==1.10
+rauth==0.7.3
+jsonpickle==0.9.5
+pycrypto==2.6.1
