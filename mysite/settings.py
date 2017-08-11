@@ -118,9 +118,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
-
 STATIC_URL = '/static/'
 
 # OAuth1 tokens
@@ -134,7 +131,7 @@ authorize_url = "https://appcenter.intuit.com/Connect/Begin"
 base_url = "https://sandbox-quickbooks.api.intuit.com/v3/company/"
 
 #change oauth_flag to 1 for OAuth1 apps and fill in valid OAuth1 tokens above. Get oauth2 access token from OAuth2 playground: https://developer.intuit.com/v2/ui#/playground
-oauth_flag = 1
+oauth_flag = 2
 access_token_oauth2 = "<EnterOAuth2AccessTokenHere>"
 
 # OAuth2 app realm ID
