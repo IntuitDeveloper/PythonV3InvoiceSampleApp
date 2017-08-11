@@ -65,8 +65,10 @@ Please go to each app to see how to configure and run it.
 ### OAuth1 Implementation
 This app shows how to use you app's consumer token and consumer secret and get OAuth access token, access secret and realm id.
 
+To implement OAuth2, please refer to [OAuth2PythonSampleApp](https://github.com/IntuitDeveloper/OAuth2PythonSampleApp)
+
 #### Configure this app
-Please enter your app's consumer token and consumer secret in [settings.py](mysite/settings.py). Then follow the steps given above [Getting Started](#getting-started) to launch the app and go to url `http://localhost:8000/oauth`
+Please enter your app's consumer token and consumer secret in [settings.py](mysite/settings.py). Then follow the steps given above to launch the app and go to url `http://localhost:8000/oauth`
 
 ### Invoice CRUD Using Object
 This app shows how to create, read, update, delete and query Invoice using objects. 
@@ -76,23 +78,23 @@ For OAuth2 apps, please go to [OAuth2 playgorund](https://developer.intuit.com/v
 
 This app is by default uses OAuth2 tokens, if your have OAuth1 app and would like to run this app, please go to [settings.py](mysite/settings.py) and change `oauth_flag` to 1, enter follow steps for app 1 i.e. OAuth1 implementation to run it and get access tokens and realm id.
 
-Then follow the steps given above [Getting Started](#getting-started) to launch the app and go to url `http://localhost:8000/invoice`
+Then follow the steps given above to launch the app and go to url `http://localhost:8000/invoice`
 
 ### Invoice CRUD Using Dictionary
 This app shows how to create, read, update, delete and query Invoice using dictionary. 
 
 #### Configure this app
-For OAuth1 and OAuth2 token configuration see the configuration steps for [Invoice CRUD Using Object](#invoice-crud-using-object).
+For OAuth1 and OAuth2 token configuration see the steps given in Invoice CRUD Using Object.
 
-Then follow the steps given above [Getting Started](#getting-started) to launch the app and go to url `http://localhost:8000/invoiceUsingDict`
+Then follow the steps given above to launch the app and go to url `http://localhost:8000/invoiceUsingDict`
 
 ### Webhooks
 This app shows how to receive webhooks for authorized sandbox company for subscribed entities.
 
 #### Configure this app
 1. Install ngrok and launch ngrok with command `ngrok http 8000`
-2. Copy the https url you get from the server after it launches and paste in app's Webhooks tab in field `Endpoint URL`, select entities and click Save.
+2. Copy the https url you get from the ngrok server after it launches and paste in app's Webhooks tab in field `Endpoint URL`, select entities and click Save.
 3. Copy the webhooks verifier in [settings.py](mysite/settings.py)
-Note: For now `webhooks_subscribed_entities` are saved for Customer and Term. They will need to be updated for other entities subscribed.
+Note: For now `webhooks_subscribed_entities` are saved for Customer and Term. It will need to be updated for other subscribed entities.
 
 After the subscribed entities are edited, you should see the post from Intuit's servers on the terminal.
