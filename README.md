@@ -1,7 +1,7 @@
 ## Python V3 Invoice Sample App
 ### Sample App in Python that implements OAuth1, Invoice CRUD and Webhooks
 
-This sample app is meant to provide working example of how to make API calls to Quickbooks. Specifically, this sample application demonstrates the following:
+This sample app is meant to provide working example of how to make API calls to QuickBooks. Specifically, this sample application demonstrates the following:
 
 1. Implementing OAuth1 to connect an application to a customer's QuickBooks Online company.
 2. Invoicing which supports create, read, update, delete and query operations using:
@@ -74,9 +74,9 @@ Please enter your app's consumer token and consumer secret in [settings.py](mysi
 This app shows how to create, read, update, delete and query Invoice using objects. 
 
 #### Configure this app
-For OAuth2 apps, please go to [OAuth2 playgorund](https://developer.intuit.com/v2/ui#/playground) and follow the OAuth2 and then enter the access token and associated realm id in [settings.py](mysite/settings.py). 
+For OAuth2 apps, please go to [OAuth2 playgorund](https://developer.intuit.com/v2/ui#/playground) and follow the OAuth2 flow and then paste the access token and associated realm id in [settings.py](mysite/settings.py). 
 
-This app is by default uses OAuth2 tokens, if your have OAuth1 app and would like to run this app, please go to [settings.py](mysite/settings.py) and change `oauth_flag` to 1, enter follow steps for app 1 i.e. OAuth1 implementation to run it and get access tokens and realm id.
+This app by default uses OAuth2 tokens, if your have OAuth1 app and would like to run this app, please go to [settings.py](mysite/settings.py) and change `oauth_flag` to 1, follow steps from OAuth1 implementation to run it and save access tokens and realm id to session.
 
 Then follow the steps given above to launch the app and go to url `http://localhost:8000/invoice`
 
@@ -93,8 +93,8 @@ This app shows how to receive webhooks for authorized sandbox company for subscr
 
 #### Configure this app
 1. Install ngrok and launch ngrok with command `ngrok http 8000`
-2. Copy the https url you get from the ngrok server after it launches and paste in app's Webhooks tab in field `Endpoint URL`, select entities and click Save.
-3. Copy the webhooks verifier in [settings.py](mysite/settings.py)
-Note: For now `webhooks_subscribed_entities` are saved for Customer and Term. It will need to be updated for other subscribed entities.
+2. Copy the https url you get from the ngrok server after it launche, paste it in app's Webhooks tab to field `Endpoint URL`, select entities and click Save.
+3. Copy the webhooks verifier after clicking Save and paste it in [settings.py](mysite/settings.py)
+Note: For now, `webhooks_subscribed_entities` is saved for Customer and Term. It will need to be updated for other subscribed entities.
 
-After the subscribed entities are edited, you should see the post from Intuit's servers on the terminal.
+After the subscribed entities are edited from the customer's point of view in sandbox company, you should see the post from Intuit's servers on the terminal.
