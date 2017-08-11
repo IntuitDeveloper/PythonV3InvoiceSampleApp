@@ -93,7 +93,8 @@ This app shows how to receive webhooks for authorized sandbox company for subscr
 
 #### Configure this app
 1. Install ngrok and launch ngrok with command `ngrok http 8000`
-2. Copy the https url you get from the ngrok server after it launche, paste it in app's Webhooks tab to field `Endpoint URL`, select entities and click Save.
+2. Copy the https url you get from the ngrok server after it launches, paste it as `https://<EnterURLHere>/webhooks`
+in app's Webhooks tab to field `Endpoint URL`, select entities and click Save.
 3. Copy the webhooks verifier after clicking Save and paste it in [settings.py](mysite/settings.py)
 Note: For now, `webhooks_subscribed_entities` is saved for Customer and Term. It will need to be updated for other subscribed entities.
 
