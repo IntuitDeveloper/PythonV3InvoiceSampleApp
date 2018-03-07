@@ -1,5 +1,5 @@
 ## Python V3 Invoice Sample App
-### Sample App in Python that implements OAuth1, Invoice CRUD and Webhooks
+### Sample App in Python that implements OAuth1, Invoice CRUD and Webhooks while also provides support for OAuth2
 
 This sample app is meant to provide working example of how to make API calls to QuickBooks. Specifically, this sample application demonstrates the following:
 
@@ -63,7 +63,7 @@ All app settings can be found at [settings.py](mysite/settings.py) and apps use 
 Please go to each app to see how to configure and run it. 
 
 ### OAuth1 Implementation
-This app shows how to use you app's consumer token and consumer secret and get OAuth access token, access secret and realm id.
+This app shows how to use you app's consumer token and consumer secret and get OAuth access token, access secret and realm id. Skip this project if your app uses OAuth1 and go to Configure this app section to use OAuth2 access token for other features.
 
 To implement OAuth2, please refer to [OAuth2PythonSampleApp](https://github.com/IntuitDeveloper/OAuth2PythonSampleApp)
 
@@ -74,7 +74,7 @@ Please enter your app's consumer token and consumer secret in [settings.py](mysi
 This app shows how to create, read, update, delete and query Invoice using objects. 
 
 #### Configure this app
-For OAuth2 apps, please go to [OAuth2 playgorund](https://developer.intuit.com/v2/ui#/playground) and follow the OAuth2 flow and then paste the access token and associated realm id in [settings.py](mysite/settings.py). 
+For OAuth2 apps, please go to [OAuth2 playgorund](https://developer.intuit.com/v2/ui#/playground) and follow the OAuth2 flow and then copy-paste the access token and associated realm id in [settings.py](mysite/settings.py). 
 
 This app by default uses OAuth2 tokens, if your have OAuth1 app and would like to run this app, please go to [settings.py](mysite/settings.py) and change `oauth_flag` to 1, follow steps from OAuth1 implementation to run it and save access tokens and realm id to session.
 
