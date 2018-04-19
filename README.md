@@ -1,3 +1,5 @@
+[![Sample Banner](views/Sample.png)][ss1]
+
 ## Python V3 Invoice Sample App
 ### Sample App in Python that implements OAuth1, Invoice CRUD and Webhooks while also provides support for OAuth2
 
@@ -99,3 +101,5 @@ in app's Webhooks tab to field `Endpoint URL`, select entities and click Save.
 Note: For now, `webhooks_subscribed_entities` is saved for Customer and Term. It will need to be updated for other subscribed entities.
 
 After the subscribed entities are edited from the customer's point of view in sandbox company, you should see the post from Intuit's servers on the terminal.
+
+[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=PythonV3InvoiceSampleApp
