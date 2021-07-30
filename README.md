@@ -1,4 +1,4 @@
-[![Sample Banner](views/Sample.png)][ss1]
+[![Rate your Sample](views/Ratesample.png)][ss1][![Yes](views/Thumbup.png)][ss2][![No](views/Thumbdown.png)][ss3]
 
 ## Python V3 Invoice Sample App
 ### Sample App in Python that implements OAuth1, Invoice CRUD and Webhooks while also provides support for OAuth2
@@ -102,4 +102,6 @@ Note: For now, `webhooks_subscribed_entities` is saved for Customer and Term. It
 
 After the subscribed entities are edited from the customer's point of view in sandbox company, you should see the post from Intuit's servers on the terminal.
 
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=PythonV3InvoiceSampleApp
+[ss1]: #
+[ss2]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=Yes&checkpoint=PythonV3InvoiceSampleApp&pageUrl=github
+[ss3]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=No&checkpoint=PythonV3InvoiceSampleApp&pageUrl=github
